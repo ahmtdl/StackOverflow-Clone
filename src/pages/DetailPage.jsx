@@ -72,7 +72,7 @@ export default function DetailPage() {
     if (error) {
       console.error("Error inserting answer:", error.message);
     } else {
-      navigate(`/questions/${id}`);
+      window.location.reload();
     }
   }
 

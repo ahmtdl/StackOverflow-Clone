@@ -10,7 +10,11 @@ export default function AskQuestion() {
   async function handleAskQuestion(e) {
     e.preventDefault();
 
-    const { user, error: authError } = await supabase.auth.getUser();
+    const {
+      data: { user },
+      error: authError,
+    } = await supabase.auth.getUser();
+
     if (authError) {
       setShowLoginModal(true);
       return;
@@ -32,7 +36,7 @@ export default function AskQuestion() {
     if (error) {
       console.error("Error inserting question:", error.message);
     } else {
-      window.location.reload();
+      navigate(`/questions`);
     }
   }
 
