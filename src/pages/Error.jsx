@@ -12,7 +12,7 @@ export default function Error() {
         </h2>
         <p className='text-[15px]'>
           Now be quiet and go back to
-          <Link to={"/"} className='pl-2 text-blue-500'>
+          <Link to={"/home"} className='pl-2 text-blue-500'>
             Home
           </Link>
         </p>

@@ -32,7 +32,7 @@ export default function AskQuestion() {
     if (error) {
       console.error("Error inserting question:", error.message);
     } else {
-      navigate(`/questions`);
+      window.location.reload();
     }
   }
 

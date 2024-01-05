@@ -103,7 +103,7 @@ export default function ProfilePage() {
     if (userError) {
       console.log(userError.message);
     } else {
-      navigate(`/users/${user.user_name}`);
+      window.location.reload();
     }
   }
 
