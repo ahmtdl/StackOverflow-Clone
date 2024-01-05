@@ -118,7 +118,7 @@ export default function Signup() {
             <input
               type='text'
               name='name'
-              className='min-h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
+              className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
               required
             />
           </div>
@@ -129,8 +129,8 @@ export default function Signup() {
             <input
               type='email'
               name='email'
-              className={`min-h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5${
-                error ? "border-2 border-red-500" : ""
+              className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5${
+                error ? "border-2 border-red-500 p-2.5" : ""
               }`}
               required
             />
@@ -144,8 +144,8 @@ export default function Signup() {
             <input
               type='password'
               name='password'
-              className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full min-h-10 p-2.5${
-                passwordError ? "border-red-500 border-2" : ""
+              className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5${
+                passwordError ? "border-red-500 border-2 p-2.5" : ""
               }`}
               required
             />
