@@ -213,7 +213,10 @@ export default function ProfilePage() {
               ) : (
                 <ul>
                   {questions.map((question) => (
-                    <li key={question.id} className='border flex rounded p-3'>
+                    <li
+                      key={question.id}
+                      className='border flex rounded p-3 mb-2'
+                    >
                       <Link to={`/questions/${question.id}`}>
                         <p>{question.title}</p>
                       </Link>
