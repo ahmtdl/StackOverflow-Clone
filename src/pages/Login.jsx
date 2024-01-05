@@ -38,7 +38,7 @@ export default function Login() {
           <input
             type='email'
             name='email'
-            className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${
+            className={`min-h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${
               error ? "border-red-500 border-2" : ""
             }`}
             required
@@ -52,7 +52,7 @@ export default function Login() {
           <input
             type='password'
             name='password'
-            className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${
+            className={`min-h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${
               error ? "border-red-500 border-2" : ""
             }`}
             required

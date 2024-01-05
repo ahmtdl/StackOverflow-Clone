@@ -54,7 +54,7 @@ export default function Signup() {
       options: {
         data: {
           name: user.name,
-          profile_img: profileImageUrl, // Assign the random image URL to profile_img
+          profile_img: profileImageUrl,
         },
       },
     });
@@ -72,7 +72,7 @@ export default function Signup() {
         {
           user_name: user.name,
           email: user.email,
-          profile_img: profileImageUrl, // Assign the random image URL to profile_img
+          profile_img: profileImageUrl,
         },
       ]);
 
@@ -118,7 +118,7 @@ export default function Signup() {
             <input
               type='text'
               name='name'
-              className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
+              className='min-h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
               required
             />
           </div>
@@ -129,8 +129,8 @@ export default function Signup() {
             <input
               type='email'
               name='email'
-              className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5${
-                error ? "border-2 border-red-500" : "" // Set border color to red if there's an error
+              className={`min-h-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5${
+                error ? "border-2 border-red-500" : ""
               }`}
               required
             />
@@ -144,12 +144,12 @@ export default function Signup() {
             <input
               type='password'
               name='password'
-              className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5${
-                passwordError ? "border-red-500 border-2" : "" // Set border color to red if there's a password error
+              className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full min-h-10 p-2.5${
+                passwordError ? "border-red-500 border-2" : ""
               }`}
               required
             />
-            {/* Display password error message below password input */}
+
             {passwordError && (
               <p className='text-red-500 text-[13px] mt-1 '>{passwordError}</p>
             )}
